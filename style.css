@@ -11,15 +11,12 @@
 
 body {
     background-image: url('SOURCE/pexels-akos-szabo-145938-440731.jpg');
-    background-size: cover; /* Pour couvrir toute la page */
-    background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
-    background-position: center; /* Pour centrer l'image */
 }
 
 .content {
     top: 0;
     left: 0;
-    margin: 20px; 
+    margin: 30px; 
     letter-spacing: 0.6px;
     line-height: 1.2;
 }
