@@ -3,23 +3,28 @@
     src: url("G2TGR-Regular.otf") format("opentype");
 }
 
-*{
-    font-family: TGR,Arial,sans-serif;
+* {
+    font-family: TGR, Arial, sans-serif;
     letter-spacing: 0.6px;
     color: white;
 }
 
-body{
+body {
     background-image: url('SOURCE/pexels-akos-szabo-145938-440731.jpg');
+    background-size: cover; /* Pour couvrir toute la page */
+    background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
+    background-position: center; /* Pour centrer l'image */
 }
-.content{
-    top:0;
-    left:0;
+
+.content {
+    top: 0;
+    left: 0;
     margin: 20px; 
     letter-spacing: 0.6px;
     line-height: 1.2;
 }
-.text{
+
+.text {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -28,18 +33,22 @@ body{
     line-height: 1.2;
 }
 
-.wiggle a:hover{ 
-  animation: wiggle 75ms infinite;
-  animation-timing-function: linear;   
+.wiggle a:hover { 
+    animation: wiggle 75ms infinite;
+    animation-timing-function: linear;   
 }
 
 @keyframes wiggle {
-  0% { transform: translate(2px, 0); }
-  50% { transform: translate(-2px, 0); }
-  100% { transform: translate(2px, 0); }
+    0% { transform: translate(2px, 0); }
+    50% { transform: translate(-2px, 0); }
+    100% { transform: translate(2px, 0); }
 }
 
+a {
+    color: white;
+}
 
-a{color: white;}
-a:hover{ text-decoration:none;cursor: pointer;}
-
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
