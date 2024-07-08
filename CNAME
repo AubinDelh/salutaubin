@@ -1,0 +1,4 @@
+echo "www.salutaubin.com" > CNAME
+git add CNAME
+git commit -m "Ajout du fichier CNAME"
+git push origin main
