@@ -6,11 +6,11 @@
 * {
     font-family: TGR, Arial, sans-serif;
     letter-spacing: 0.6px;
-    color: white;
+    color: black;
 }
 
 body {
-    background-image: url('SOURCE/pexels-akos-szabo-145938-440731.jpg');
+    background-image: url('');
     background-size: cover;
     height: 100vh;
 }
