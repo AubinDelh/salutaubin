@@ -1,23 +1,748 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="fr">
+  <head>
+    <script>document.documentElement.classList.add('has-pt');</script>
+    <link rel="stylesheet" href="https://use.typekit.net/zxh4ctl.css">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="canonical" href="https://www.salutaubin.com">
+    <meta name="robots" content="all">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+
+    <meta name="description" content="">
+
+    <!-- Primary Meta Tags -->
     <title>Aubin Delhaye</title>
-    <meta name="author" content="Aubin Delhaye">
-    <meta name="keywords" content="Delhaye,Aubin,Design">
-    <meta name="description" content="Aubin Delhaye is a graphic and type designer.">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div>Aubin Delhaye est un graphiste français, basé entre Bruxelles et Grenoble.</div>
-    <div class="akkordeon-inhalt">
+    <meta name="title" content="Aubin Delhaye">
+    <meta name="description" content="">
+
+  <!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://salutaubin.com">
+<meta property="og:title" content="Aubin Delhaye — Designer graphique">
+<meta property="og:description" content="Designer graphique basé entre Bruxelles et Grenoble. Identité visuelle, typographie, édition, direction artistique pour institutions et projets culturels.">
+<meta property="og:image" content="https://salutaubin.com/img/meta/og-hero1.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aubin Delhaye — Designer graphique">
+<meta name="twitter:description" content="Designer graphique basé entre Bruxelles et Grenoble. Identité visuelle, typographie, édition, direction artistique.">
+<meta name="twitter:image" content="https://salutaubin.com/img/meta/og-hero1.jpg">
+
+
+    <link rel="shortcut icon" href="/img/meta/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://use.typekit.net/ltz1xqf.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <div id="cursor-label"></div>
+  <div id="cursor-circle"></div>
+  <body id="top" class="page-fx">
+    <!-- Splash -->
+    <div id="splash" role="dialog" aria-modal="true" aria-label="Écran d’introduction">
+      <h1 class="splash-brand">
+        <span id="type"></span><span class="splash-caret" aria-hidden="true"></span>
+      </h1>
+    </div>
+  
+    <!-- HEADER (stick) -->
+    <header class="site-header">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="index.html">SALUTAUBIN</a>
+        </div>
+        <nav id="left--social" class="menu">
+          <a href="#about" data-i18n="nav.about">À PROPOS</a>
+          <a href="mailto:salutaubin@gmail.com" data-i18n="nav.contact">CONTACT</a>
+          <a href="https://www.instagram.com/salutaubin/" target="_blank" rel="noopener noreferrer" data-i18n="nav.instagram">INSTAGRAM</a>
+        </nav>        
+      </div>
+    </header>
+
+    <div id="close-overlay" onclick="closeInfos()"></div>
+
+    <!-- Site -->
+    <div id="page" class="site">
+
+      <!-- ===== HERO CAROUSEL (plein écran entre header et footer) ===== -->
+      <section class="hero" aria-label="Carrousel d’intro">
+        <div class="hero__track" data-autoplay="0" data-fade="false">
+          <img
+  src="img/hero/1.webp"
+  srcset="
+    img/hero/1-mobile.webp 800w,
+    img/hero/1.webp        1600w
+  "
+  sizes="(max-width: 768px) 100vw, 100vw"
+  alt=""
+  loading="eager"
+  class="is-active"
+/>
+<video
+  class="hero-slide hero-video"
+  data-tone="light"
+  muted
+  playsinline
+  autoplay
+  loop
+  preload="metadata"
+  poster="img/hero/1-poster.webp"
+  data-src-desktop-webm="video/hero-1.webm"
+  data-src-desktop-mp4="video/hero-1.mp4"
+  data-src-mobile-webm="video/hero-1-mobile.webm"
+  data-src-mobile-mp4="video/hero-1-mobile.mp4"
+></video>
+
+
+          <img
+          src="img/hero/2.webp"
+          srcset="
+            img/hero/2-mobile.webp 800w,
+            img/hero/2.webp        1600w
+          "
+          sizes="(max-width: 768px) 100vw, 100vw"
+          alt=""
+          loading="eager"
+          class="is-active"
+        />          
+        <img
+        src="img/hero/3.webp"
+        srcset="
+          img/hero/3-mobile.webp 800w,
+          img/hero/3.webp        1600w
+        "
+        sizes="(max-width: 768px) 100vw, 100vw" 
+        alt=""
+        loading="eager"
+        class="is-active"
+        data-tone="light"
+      />
+          <img src="img/hero/4.webp" data-tone="dark" alt="" loading="lazy" />
+          
+          <video
+          class="hero-slide hero-video"
+          data-tone="light"
+          muted
+          playsinline
+          autoplay
+          loop
+          preload="metadata"
+          poster="img/hero/2-poster.webp"
+          data-src-desktop-webm="video/hero-2.webm"
+          data-src-desktop-mp4="video/hero-2.mp4"
+          data-src-mobile-webm="video/hero-2-mobile.webm"
+          data-src-mobile-mp4="video/hero-2-mobile.mp4">
+        </video>
         
-    </div>
-    <div>
-        <a href="mailto:salutaubin@gmail.com">Email</a>, 
-        <a href="https://www.instagram.com/salutaubin/" target="_blank">Instagram</a>, 
-        <a href="SOURCE/PORTFOLIO_AUBIN_DELHAYE_EN.pdf" target="_blank">Portfolio</a>
-    </div>
-</body>
+          <img 
+  src="img/hero/5.webp"
+  srcset="
+    img/hero/5-mobile.webp 800w,
+    img/hero/5.webp        1600w
+  "
+  sizes="(max-width: 768px) 100vw, 100vw"
+  alt=""
+  loading="eager"
+  class="is-active"
+  data-tone="dark"
+/>
+          <video data-tone="light" class="hero-slide" muted playsinline autoplay loop preload="metadata" poster="img/hero/1-poster.webp">
+            <source src="video/hero-3.webm" type="video/webm">
+            <source src="video/hero-3.mp4"  type="video/mp4">
+          </video>
+        </div>
+      
+        <!-- Flèche -->
+        <a href="#after-hero" class="hero__scroll" aria-label="Aller au contenu">↓</a>
+      </section>
+      <div id="after-hero"></div>
+      
+      <div id="after-hero"></div>
+      <!-- ===== /HERO ===== -->
+      <br><br>
+      <main class="projects">
+        <section class="project" id="Project1" aria-label="ÉCOLE NATIONALE SUPÉRIEURE D'ARCHITECTURE DE GRENOBLE / BRANDING">
+          <h1 data-i18n="p1.title">ÉCOLE NATIONALE SUPÉRIEURE D'ARCHITECTURE DE GRENOBLE / BRANDING</h1>
+          <div class="carousel" data-total="8">
+            <img src="img/Project1/1.webp" class="active" alt="" loading="lazy" />
+            <img src="img/Project1/2.webp" alt="" loading="lazy" />
+            <img src="img/Project1/3.webp" alt="" loading="lazy" />
+            <img src="img/Project1/4.webp" alt="" loading="lazy" />
+            <img src="img/Project1/5.webp" alt="" loading="lazy" />
+            <img src="img/Project1/6.webp" alt="" loading="lazy" />
+            <img src="img/Project1/7.webp" alt="" loading="lazy" />
+            <img src="img/Project1/8.webp" alt="" loading="lazy" />
+            <img src="img/Project1/9.webp" alt="" loading="lazy" />
+            <img src="img/Project1/10.webp" alt="" loading="lazy" />
+          </div>
+          <div class="project--info">
+            <p class="info-button"><span class="toggle-icon">+</span><span data-i18n="ui.info">INFOS</span></p>
+            <div class="carousel-counter">01/08</div>
+          </div>
+          <div class="project--info--details" id="Project1-info" data-i18n="p1.desc">
+            <p>
+              Cette année, j’ai aidé l’École Nationale Supérieure d’Architecture de Grenoble à repenser son identité lorsqu’elle a rejoint le réseau UGA, Université Grenoble Alpes.
+              <br>L’identité reflète l’héritage brutaliste de Grenoble tout en mettant en valeur son engagement envers la recherche et l’innovation.              <br><br>
+              <br><br>
+            </p>
+          </div>
+        </section>
+  
+        <section class="project" id="Project2" aria-label="LA TRINITÉ / IDENTITÉ">
+          <h1 data-i18n="p2.title">LA TRINITÉ / BRANDING</h1>
+          <div class="carousel" data-total="6">
+            <img src="img/Project2/1.webp" class="active" alt="" loading="lazy" />
+            <img src="img/Project2/2.webp" alt="" loading="lazy" />
+            <img src="img/Project2/3.webp" alt="" loading="lazy" />
+            <img src="img/Project2/4.webp" alt="" loading="lazy" />
+            <img src="img/Project2/5.webp" alt="" loading="lazy" />
+            <img src="img/Project2/6.webp" alt="" loading="lazy" />
+          </div>
+          <div class="project--info">
+            <p class="info-button"><span class="toggle-icon">+</span><span data-i18n="ui.info">INFOS</span></p>
+            <div class="carousel-counter">01/06</div>
+          </div>
+          <div class="project--info--details" id="Project2-info" data-i18n="p2.desc">
+            <p>
+              Identité, Typographie, Édition
+              <br><br>
+              J’ai eu le plaisir d’être invité à l’appel à projets pour la Chapelle de la Trinité, une nouvelle salle de concert spécialisée dans la musique baroque et contemporaine. Située dans un joyau architectural baroque sur la presqu’île lyonnaise,              le projet est porté par l’association Superspective et Les Concerts de L’Hostel Dieu. L’identité que j’ai conçue s’articule autour d’une typographie sur mesure, Tchotchki.              <br><br>
+              <br><br>
+            </p>
+          </div>
+        </section>
+  
+        <section class="project" id="Project3" aria-label="LA BELLE ÉLECTRIQUE : 10 ANS ENSEMBLE / IDENTITÉ">
+          <h1 data-i18n="p3.title">LA BELLE ÉLECTRIQUE : 10 ANS ENSEMBLE / IDENTITÉ</h1>
+          <div class="carousel" data-total="5">
+            <img src="img/Project3/31.webp" class="active" alt="" loading="lazy" />
+            <img src="img/Project3/2.webp" alt="" loading="lazy" />
+            <img src="img/Project3/3.webp" alt="" loading="lazy" />
+            <img src="img/Project3/4.webp" alt="" loading="lazy" />
+            <img src="img/Project3/5.webp" alt="" loading="lazy" />
+            <img src="img/Project3/6.webp" alt="" loading="lazy" />
+          </div>
+          <div class="project--info">
+            <p class="info-button"><span class="toggle-icon">+</span><span data-i18n="ui.info">INFOS</span></p>
+            <div class="carousel-counter">01/05</div>
+          </div>
+          <div class="project--info--details" id="Project3-info" data-i18n="p3.desc">
+            <p>
+              Identité, Animation, Affiches, Édition
+              <br><br>
+              La Belle Électrique est un lieu vivant, une salle de concert et un centre culturel qui propose une large gamme d’activités aux habitants de Grenoble.
+              Pour son 10ᵉ anniversaire, nous avons conçu une campagne de communication articulée autour d’un « 10 » graphique, symbole de la richesse, des souvenirs et des expériences partagés par le public, l’équipe et ses collaborateurs.
+              La campagne a été déployée avec ingéniosité dans toute la ville et au sein du lieu, à travers les supports imprimés et numériques, afin d’inviter le plus grand nombre à célébrer une décennie d’émotions, de musique et de rencontres…
+              En somme, 10 ans ensemble.              <br><br>
+              <br><br>
+            </p>
+          </div>  
+        </section>
+
+        <section class="project" id="Project4" aria-label="LA NUIT JE BRÛLE / ÉDITION">
+          <h1 data-i18n="p4.title">LA NUIT JE BRÛLE / ÉDITION</h1>
+          <div class="carousel" data-total="7">
+            <img src="img/Project4/1.webp" class="active" alt="" loading="lazy" />
+            <img src="img/Project4/2.webp" alt="" loading="lazy" />
+            <img src="img/Project4/3.webp" alt="" loading="lazy" />
+            <img src="img/Project4/4.webp" alt="" loading="lazy" />
+            <img src="img/Project4/5.webp" alt="" loading="lazy" />
+            <img src="img/Project4/6.webp" alt="" loading="lazy" />
+            <img src="img/Project4/7.webp" alt="" loading="lazy" />
+          </div>
+          <div class="project--info">
+            <p class="info-button"><span class="toggle-icon">+</span><span data-i18n="ui.info">INFOS</span></p>
+            <div class="carousel-counter">01/08</div>
+          </div>
+          <div class="project--info--details" id="Project4-info" data-i18n="p4.desc">
+            <p>
+              La Nuit Je Brûle est un projet en collaboration avec Benjamin Amis.
+              Cette édition rassemble des textes en prose poétique, mettant en scène un jeune narrateur qui explore des thèmes liés aux difficultés de l’existence : solitude, excès, amitié, sexe…
+              Chaque texte est mis en page de manière unique, reflétant les changements d’atmosphère, de compagnie ou d’état d’esprit.
+              Au lieu d’une pagination traditionnelle, c’est le passage du temps qui guide le lecteur à travers le texte, symbolisé par l’heure indiquée sur chaque page.                <br><br>
+              <br><br>
+            </p>
+          </div>
+        </section>
+          
+        <section class="project" id="Project5" aria-label="LA BELLE ÉLECTRIQUE : 10 ANS ENSEMBLE / ÉDITION">
+          <h1 data-i18n="p5.title">LA BELLE ÉLECTRIQUE : 10 ANS ENSEMBLE / ÉDITION</h1>
+          <div class="carousel" data-total="6">
+            <img src="img/Project5/2.webp" class="active" alt="" loading="lazy" />
+            <img src="img/Project5/1.webp" alt="" loading="lazy" />
+            <img src="img/Project5/3.webp" alt="" loading="lazy" />
+            <img src="img/Project5/4.webp" alt="" loading="lazy" />
+            <img src="img/Project5/5.webp" alt="" loading="lazy" />
+            <img src="img/Project5/6.webp" alt="" loading="lazy" />
+          </div>
+          <div class="project--info">
+            <p class="info-button"><span class="toggle-icon">+</span><span data-i18n="ui.info">INFOS</span></p>
+            <div class="carousel-counter">01/06</div>
+          </div>
+          <div class="project--info--details" id="Project5-info" data-i18n="p5.desc">
+            <p>
+              Édition
+              <br><br>
+              2025
+              <br><br>
+              Une édition spéciale imaginée à l’occasion des dix ans de La Belle Électrique. Ce magazine retrace l’histoire du lieu à travers les souvenirs, les voix et les regards de celles et ceux qui l’ont fait vivre. On y retrouve des interviews de l’équipe, d’artistes, de partenaires et de membres du public, des archives visuelles, ainsi qu’un aperçu de l’impact culturel et social de La Belle sur la scène grenobloise. Pensé comme un objet à la fois mémoire et célébration, le magazine met en lumière dix années d’engagement, de musique et de partage.
+            </p>
+          </div>
+        </section>
+
+        <section class="project" id="Project6" aria-label="ENSAG-UGA / RAPPORT D'ACTIVITÉ">
+          <h1 data-i18n="p6.title">ENSAG-UGA / RAPPORT D'ACTIVITÉ</h1>
+          <div class="carousel" data-total="8">
+            <img src="img/Project6/1.webp" class="active" alt="" loading="lazy" />
+            <img src="img/Project6/ENSAG-RA_1.webp" alt="" loading="lazy" /> 
+            <img src="img/Project6/2.webp" alt="" loading="lazy" /> 
+            <img src="img/Project6/3.webp" alt="" loading="lazy" /> 
+            <img src="img/Project6/4.webp" alt="" loading="lazy" /> 
+            <img src="img/Project6/5.webp" alt="" loading="lazy" />
+          </div>
+          <div class="project--info">
+            <p class="info-button"><span class="toggle-icon">+</span><span data-i18n="ui.info">INFOS</span></p>
+            <div class="carousel-counter">01/04</div>
+          </div>
+          <div class="project--info--details" id="Project6-info" data-i18n="p6.desc">
+            <p>
+              Collaboration avec l’École Nationale Supérieure d’Architecture de Grenoble pour la conception et la mise en page de son rapport d’activité 2024–2025.
+              L’objet éditorial met en valeur la richesse des projets de recherche et pédagogiques menés par l’école, en soulignant la diversité de ses approches et de ses partenariats.
+            </p>
+          </div>
+        </section>
+      
+        <section class="project" id="Project7" aria-label="LES NUITS DE LA BELLE ÉLECTRIQUE / IDENTITÉ">
+          <h1 data-i18n="p7.title">LES NUITS DE LA BELLE ÉLECTRIQUE / IDENTITÉ</h1>
+          <div class="carousel" data-total="8">
+            <img src="img/Project7/1.webp" class="active" alt="" loading="lazy" />
+            <img src="img/Project7/2.webp" alt="" loading="lazy" />
+            <img src="img/Project7/3.webp" alt="" loading="lazy" /> 
+            <img src="img/Project7/4.webp" alt="" loading="lazy" /> 
+            <img src="img/Project7/5.webp" alt="" loading="lazy" /> 
+          </div>
+          <div class="project--info" >
+            <p class="info-button"><span class="toggle-icon">+</span><span data-i18n="ui.info">INFOS</span></p>
+            <div class="carousel-counter">01/05</div>
+          </div>
+          <div class="project--info--details" id="Project7-info" data-i18n="p7.desc">
+            <p>
+              Édition
+              <br><br>
+              2025
+              <br><br>
+              Une édition spéciale imaginée à l’occasion des dix ans de La Belle Électrique. Ce magazine retrace l’histoire du lieu à travers les souvenirs, les voix et les regards de celles et ceux qui l’ont fait vivre. On y retrouve des interviews de l’équipe, d’artistes, de partenaires et de membres du public, des archives visuelles, ainsi qu’un aperçu de l’impact culturel et social de La Belle sur la scène grenobloise. Pensé comme un objet à la fois mémoire et célébration, le magazine met en lumière dix années d’engagement, de musique et de partage.
+            </p>
+          </div>
+        </section>
+
+        <section class="project" id="Project8" aria-label="SIGNÉLAZER / CONSULTANCE">
+          <h1 data-i18n="p8.title">SIGNÉLAZER / CONSULTANCE</h1>
+          <div class="carousel" data-total="8">
+            <img src="img/Project8/1.webp" class="active" alt="" loading="lazy" />
+            <img src="img/Project8/2.webp" alt="" loading="lazy" />
+            <img src="img/Project8/3.webp" alt="" loading="lazy" /> 
+            <img src="img/Project8/4.webp" alt="" loading="lazy" /> 
+            <img src="img/Project8/5.webp" alt="" loading="lazy" /> 
+            <img src="img/Project8/6.webp" alt="" loading="lazy" /> 
+            <img src="img/Project8/7.webp" alt="" loading="lazy" /> 
+          </div>
+          <div class="project--info" >
+            <p class="info-button"><span class="toggle-icon">+</span><span data-i18n="ui.info">INFOS</span></p>
+            <div class="carousel-counter">01/07</div>
+          </div>
+          <div class="project--info--details" id="Project8-info" data-i18n="p8.desc">
+            <p>
+              Collaboration avec le studio de graphisme Signélazer. Projets avec différents clients culturels français.
+            </p>
+          </div>
+        </section>
+
+        <section class="project" id="Project12" aria-label="LA BELLE ÉLECTRIQUE / NUITS TECHNO">
+          <h1 data-i18n="p12.title">LA BELLE ÉLECTRIQUE / NUITS TECHNO</h1>
+          <div class="carousel" data-total="8">
+            <img src="img/Project12/1.webp" class="active" alt="" loading="lazy" />
+            <img src="img/Project12/2.webp" alt="" loading="lazy" />
+            <img src="img/Project12/3.webp" alt="" loading="lazy" /> 
+          </div>
+          <div class="project--info" >
+            <p class="info-button"><span class="toggle-icon">+</span><span data-i18n="ui.info">INFOS</span></p>
+            <div class="carousel-counter">01/03</div>
+          </div>
+          <div class="project--info--details" id="Project12-info" data-i18n="p12.desc">
+            <p>
+              Édition
+              <br><br>
+              2025
+              <br><br>
+              Une édition spéciale imaginée à l’occasion des dix ans de La Belle Électrique. Ce magazine retrace l’histoire du lieu à travers les souvenirs, les voix et les regards de celles et ceux qui l’ont fait vivre. On y retrouve des interviews de l’équipe, d’artistes, de partenaires et de membres du public, des archives visuelles, ainsi qu’un aperçu de l’impact culturel et social de La Belle sur la scène grenobloise. Pensé comme un objet à la fois mémoire et célébration, le magazine met en lumière dix années d’engagement, de musique et de partage.
+            </p>
+          </div>
+        </section>
+
+        <section class="project" id="Project9" aria-label="OILINWATER / CONSULTANCE">
+          <h1 data-i18n="p9.title">OILINWATER / CONSULTANCE</h1>
+          <div class="carousel" data-total="8">
+            <img src="img/Project9/1.webp" class="active" alt="" loading="lazy" />
+            <img src="img/Project9/2.webp" alt="" loading="lazy" />
+            <img src="img/Project9/3.webp" alt="" loading="lazy" /> 
+            <img src="img/Project9/4.webp" alt="" loading="lazy" /> 
+            <img src="img/Project9/5.webp" alt="" loading="lazy" /> 
+            <img src="img/Project9/6.webp" alt="" loading="lazy" />
+            <img src="img/Project9/7.webp" alt="" loading="lazy" />
+          </div>
+          <div class="project--info" >
+            <p class="info-button"><span class="toggle-icon">+</span><span data-i18n="ui.info">INFOS</span></p>
+            <div class="carousel-counter">01/07</div>
+          </div>
+          <div class="project--info--details" id="Project9-info" data-i18n="p9.desc">
+            <p>
+              Collaboration avec le studio de graphisme Oilinwater. Projets avec différents clients culturels et corporate bruxellois.
+            </p>
+          </div>
+        </section>
+
+        <section class="project" id="Project10" aria-label="LA POMPADOUR / PROJET DE DIPLÔME">
+          <h1 data-i18n="p10.title">LA POMPADOUR / PROJET DE DIPLÔME</h1>
+          <div class="carousel" data-total="8">
+            <img src="img/Project10/1.webp" class="active" alt="" loading="lazy" />
+            <img src="img/Project10/2.webp" alt="" loading="lazy" />
+            <img src="img/Project10/3.webp" alt="" loading="lazy" /> 
+            <img src="img/Project10/4.webp" alt="" loading="lazy" /> 
+            <img src="img/Project10/5.webp" alt="" loading="lazy" /> 
+            <img src="img/Project10/6.webp" alt="" loading="lazy" /> 
+            <img src="img/Project10/7.webp" alt="" loading="lazy" /> 
+          </div>
+          <div class="project--info" >
+            <p class="info-button"><span class="toggle-icon">+</span><span data-i18n="ui.info">INFOS</span></p>
+            <div class="carousel-counter">01/07</div>
+          </div>
+          <div class="project--info--details" id="Project10-info" data-i18n="p10.desc">
+            <p>
+              La Pompadour est une maison d’édition qui cherche à répondre à la question : qu’est-ce qui constitue un texte queer ?
+              Ce travail est une exploration de la notion de théâtralité : La Pompadour n’est pas seulement un nom de collection, c’est un personnage insaisissable qui utilise le livre pour se mettre en scène et se réinventer.
+              Comme costume et décor du livre, la jaquette fait l’objet d’une attention particulière. Les artifices et éléments flamboyants s’y combinent pour évoquer tour à tour les fêtes costumées (faux cuir), les événements festifs (paillettes en plastique) ou les espaces domestiques (papiers peints, toiles cirées).
+              Enfin, à l’intérieur de chaque ouvrage, la typographie et les illustrations mettent en valeur la théâtralité propre à chaque texte.            </p>
+          </div>
+        </section>
+
+        <section class="project" id="Project11" aria-label="CAMP / MÉMOIRE">
+          <h1 data-i18n="p11.title">CAMP / MÉMOIRE</h1>
+          <div class="carousel" data-total="8">
+            <img src="img/Project11/1.webp" class="active" alt="" loading="lazy" />
+            <img src="img/Project11/2.webp" alt="" loading="lazy" />
+            <img src="img/Project11/3.webp" alt="" loading="lazy" /> 
+            <img src="img/Project11/4.webp" alt="" loading="lazy" /> 
+            <img src="img/Project11/5.webp" alt="" loading="lazy" /> 
+            <img src="img/Project11/6.webp" alt="" loading="lazy" /> 
+            <img src="img/Project11/8.webp" alt="" loading="lazy" /> 
+          </div>
+          <div class="project--info" >
+            <p class="info-button"><span class="toggle-icon">+</span><span data-i18n="ui.info">INFOS</span></p>
+            <div class="carousel-counter">01/06</div>
+          </div>
+          <div class="project--info--details" id="Project11-info" data-i18n="p11.desc">
+            <p>
+              Camp ? Le mot vient du français « se camper », qui signifie « prendre la pose ».
+Il est entré dans le dictionnaire britannique avec la définition suivante :
+« actions ou gestes exagérément accentués, théâtraux, efféminés ou homosexuels ; caractéristiques des homosexuels. »
+
+L’exagération et la saturation d’un style particulier, la prévalence de l’artifice qui met le contenu et le sens entre guillemets, le désengagement et la théâtralisation de l’expérience — tous ces éléments peuvent nous amener à considérer une œuvre comme Camp.
+
+Cette étude interroge les dynamiques intracommunautaires et la manière dont ces mécanismes peuvent être reproduits dans le marketing.
+          </div>
+        </section>
+        <br></br>
+        <section id="about" class="about-section">
+          <article class="content-constraint about-merged">
+            <p data-i18n="about.p1"></p>
+            <p data-i18n="about.p2"></p>
+          </article>
+        </section>
+        <br></br>
+        <br></br>
+      </main>
+        <footer class="site-footer">
+          <div class="footer-bar">
+            <div class="footer-left">
+              <a href="?lang=fr">FR</a> | <a href="?lang=en">EN</a>
+            </div>
+            <div class="footer-right">
+              <a href="#top" class="to-top" aria-label="Retour en haut" data-i18n="footer.top">↑ HAUT</a>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div><!-- /#page -->
+
+    <script src="main.js"></script>
+    <script>
+      // Choix vidéo mobile / desktop pour les vidéos du hero
+      (function () {
+        const mq = window.matchMedia('(max-width: 768px)');
+        const videos = document.querySelectorAll('.hero-video');
+    
+        if (!videos.length) return;
+    
+        function applyVideoSources() {
+          const isMobile = mq.matches;
+    
+          videos.forEach(video => {
+            // On vide les anciennes <source>
+            while (video.firstChild) {
+              video.removeChild(video.firstChild);
+            }
+    
+            const srcWebm = isMobile
+              ? video.dataset.srcMobileWebm
+              : video.dataset.srcDesktopWebm;
+    
+            const srcMp4 = isMobile
+              ? video.dataset.srcMobileMp4
+              : video.dataset.srcDesktopMp4;
+    
+            if (srcWebm) {
+              const sWebm = document.createElement('source');
+              sWebm.src = srcWebm;
+              sWebm.type = 'video/webm';
+              video.appendChild(sWebm);
+            }
+    
+            if (srcMp4) {
+              const sMp4 = document.createElement('source');
+              sMp4.src = srcMp4;
+              sMp4.type = 'video/mp4';
+              video.appendChild(sMp4);
+            }
+    
+            // Recharge la vidéo avec les nouvelles sources
+            video.load();
+          });
+        }
+    
+        // Initialisation
+        document.addEventListener('DOMContentLoaded', applyVideoSources);
+    
+        // Si tu veux qu’en resize ça swap aussi (optionnel) :
+        if (mq.addEventListener) {
+          mq.addEventListener('change', applyVideoSources);
+        } else if (mq.addListener) {
+          mq.addListener(applyVideoSources);
+        }
+      })();
+    </script>
+    
+    <script>
+      // ===== Réglages =====
+      const TEXT = "SALUTAUBIN";
+      const TYPE_SPEED_MS = 120;
+      const HOLD_AFTER_TYPE_MS = 400;
+    
+      // Aides
+      const splash   = document.getElementById('splash');
+      const typeSpan = document.getElementById('type');
+      const SEEN_KEY = 'seenSplash'; // sessionStorage → 1 seul affichage par onglet/session
+    
+      function finishSplash() {
+        splash.classList.add('is-hidden');
+      }
+      function revealPage() {
+        document.body.classList.remove('splash-lock');
+        document.body.classList.add('splash-done');
+        if (splash) splash.remove();
+      }
+      function typeWriter(text, i = 0) {
+        if (i < text.length) {
+          typeSpan.textContent += text.charAt(i);
+          setTimeout(() => typeWriter(text, i + 1), TYPE_SPEED_MS);
+        } else {
+          setTimeout(finishSplash, HOLD_AFTER_TYPE_MS);
+        }
+      }
+    
+      // 1) Si déjà vu pendant cette session → ne pas montrer le splash
+      //    On révèle directement la page.
+      if (sessionStorage.getItem(SEEN_KEY) === '1') {
+        // Assure la classe d’état et retire le splash s’il est présent
+        document.addEventListener('DOMContentLoaded', () => {
+          revealPage();
+        });
+      } else {
+        // 2) Première fois de la session → jouer l’animation
+        window.addEventListener('DOMContentLoaded', () => {
+          document.body.classList.add('splash-lock');
+    
+          // Respecte "réduire les animations"
+          const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+          if (prefersReduced) {
+            typeSpan.textContent = TEXT;   // écrit instantanément
+            // Marque comme vu pour cette session puis révèle
+            try { sessionStorage.setItem(SEEN_KEY, '1'); } catch(_) {}
+            revealPage();
+            return;
+          }
+    
+          // Lancer la dactylographie
+          typeWriter(TEXT);
+    
+          // Quand le fondu se termine, révéler et marquer comme vu
+          splash.addEventListener('transitionend', (e) => {
+            if (e.propertyName === 'opacity' && splash.classList.contains('is-hidden')) {
+              try { sessionStorage.setItem(SEEN_KEY, '1'); } catch(_) {}
+              revealPage();
+            }
+          });
+        });
+      }
+    </script>
+  
+   <script>
+    /* --- i18n minimal --- */
+    const I18N = {
+      fr: {
+        "nav.about":"ABOUT",
+        "nav.contact":"CONTACT",
+        "nav.instagram":"IG",
+        "ui.info":"INFO",
+        "footer.top":"↑ HAUT",
+    
+       /* --- Projets --- */
+    "p1.title":"ÉCOLE NATIONALE SUPÉRIEURE D'ARCHITECTURE DE GRENOBLE / BRANDING",
+    "p1.desc":`Cette année, j’ai aidé l’École Nationale Supérieure d’Architecture de Grenoble à repenser son identité lorsqu’elle a rejoint le réseau UGA, Université Grenoble Alpes. L’identité reflète l’héritage brutaliste de Grenoble tout en mettant en valeur son engagement envers la recherche et l’innovation.<br><br>`,
+
+    "p2.title":"LA TRINITÉ / BRANDING",
+    "p2.desc":`J’ai eu le plaisir d’être invité à participer à l’appel à projets pour la Chapelle de la Trinité, une nouvelle salle de concert dédiée à la musique baroque et contemporaine. Implanté dans un joyau architectural baroque de la presqu’île lyonnaise, le projet est porté par l’association Superspective et Les Concerts de L’Hostel Dieu. L’identité que j’ai développée repose sur une typographie sur mesure, Tchotchki, qui incarne l’esprit singulier du lieu et de sa programmation.`,
+
+    "p3.title":"LA BELLE ÉLECTRIQUE : 10 ANS ENSEMBLE / IDENTITÉ",
+    "p3.desc":`La Belle Électrique est un lieu vivant, une salle de concert et un centre culturel qui propose une large gamme d’activités aux habitants de Grenoble. Pour son 10ᵉ anniversaire, nous avons conçu une campagne de communication articulée autour d’un « 10 » graphique, symbole de la richesse, des souvenirs et des expériences partagés par le public, l’équipe et ses collaborateurs. La campagne a été déployée avec ingéniosité dans toute la ville et au sein du lieu, à travers les supports imprimés et numériques, afin d’inviter le plus grand nombre à célébrer une décennie d’émotions, de musique et de rencontres… En somme, 10 ans ensemble.`,
+
+    "p4.title":"LA NUIT JE BRÛLE / ÉDITION",
+    "p4.desc":`La Nuit Je Brûle est un projet en collaboration avec Benjamin Amis. Cette édition rassemble des textes en prose poétique, mettant en scène un jeune narrateur qui explore des thèmes liés aux difficultés de l’existence : solitude, excès, amitié, sexe… Chaque texte est mis en page de manière unique, reflétant les changements d’atmosphère, de compagnie ou d’état d’esprit. Au lieu d’une pagination traditionnelle, c’est le passage du temps qui guide le lecteur à travers le texte, symbolisé par l’heure indiquée sur chaque page.`,
+
+    "p5.title":"LA BELLE ÉLECTRIQUE : 10 ANS ENSEMBLE / ÉDITION",
+    "p5.desc":`Une édition spéciale imaginée à l’occasion des dix ans de La Belle Électrique. Ce magazine retrace l’histoire du lieu à travers les souvenirs, les voix et les regards de celles et ceux qui l’ont fait vivre. Interviews, archives visuelles et aperçu de l’impact culturel et social du lieu sur la scène grenobloise. Pensé comme un objet mémoire et célébration.`,
+
+    "p6.title":"ENSAG-UGA / RAPPORT D'ACTIVITÉ",
+    "p6.desc":`Collaboration avec l’École Nationale Supérieure d’Architecture de Grenoble pour la conception et la mise en page de son rapport d’activité 2024–2025. L’objet éditorial met en valeur la richesse des projets de recherche et pédagogiques menés par l’école, en soulignant la diversité de ses approches et de ses partenariats.`,
+
+    "p7.title":"LES NUITS DE LA BELLE ÉLECTRIQUE / IDENTITÉ",
+    "p7.desc":`Identité et déploiements visuels pour la série d’événements « Les Nuits de la Belle Électrique ». Adaptations print et numériques, cohérentes avec l’univers du lieu.`,
+
+    "p8.title":"SIGNÉLAZER / CONSULTANCE",
+    "p8.desc":`Collaboration avec le studio de graphisme Signélazer. Projets avec différents clients culturels français.`,
+
+    "p9.title":"OILINWATER / CONSULTANCE",
+    "p9.desc":`Collaboration avec le studio de graphisme Oilinwater. Projets avec différents clients culturels et corporate bruxellois.`,
+
+    "p10.title":"LA POMPADOUR / PROJET DE DIPLÔME",
+    "p10.desc":`La Pompadour est une maison d’édition qui interroge : qu’est-ce qui constitue un texte queer ? Exploration de la théâtralité : la jaquette devient costume et décor (faux cuir, paillettes, papiers peints…). À l’intérieur, typographie et illustrations servent la mise en scène propre à chaque texte.`,
+
+    "p11.title":"CAMP / MÉMOIRE",
+    "p11.desc":`« Camp » vient de « se camper » : prendre la pose. Entre exagération, artifice et théâtralité, l’étude interroge les dynamiques intracommunautaires et la manière dont ces mécanismes peuvent être reproduits dans le marketing.`,
+
+    "p12.title":"LA BELLE ÉLECTRIQUE / NUITS TECHNO",
+    "p12.desc":`Direction artistique et déclinaisons pour la programmation techno de La Belle Électrique. Identité visuelle adaptée aux supports print et digitaux.`,
+  
+  "about.p1": `Aubin Delhaye est un designer graphique multidisciplinaire basé entre Bruxelles et Grenoble. Son travail relie identité visuelle, typographie et supports imprimés & numériques, avec une expertise qui couvre le branding, la stratégie et la fabrication, du concept à la préparation des fichiers pour l’impression et la diffusion digitale. Diplômé d’un Diplôme Supérieur d’Arts Appliqués (DSAA), il inscrit sa pratique dans une exigence éditoriale et matérielle.`,
+"about.p2": `Il a collaboré avec des studios comme Signélazer et Oilinwater, façonnant des identités visuelles pour des institutions et des marques. À Bruxelles, au sein de ces studios, il a accompagné des équipes culturelles, associatives, corporate et institutionnelles, du cadrage stratégique aux livrables prêts pour l’impression et le web. En parallèle, il a piloté la communication de La Belle Électrique à Grenoble et développe aujourd’hui son activité indépendante en France et en Belgique.<br></br> © Copyright 2025 Aubin Delhaye. All Rights Reserved.`
+
+  },
+
+  en: {
+    "nav.about":"ABOUT",
+    "nav.contact":"CONTACT",
+    "nav.instagram":"IG",
+    "ui.info":"INFO",
+    "footer.top":"↑ TOP",
+
+    "p1.title":"NATIONAL SCHOOL OF ARCHITECTURE OF GRENOBLE / BRANDING",
+    "p1.desc":`This year I helped the Grenoble National School of Architecture rethink its identity as it joined the UGA network, Université Grenoble Alpes.The identity reflects Grenoble’s brutalist heritage while highlighting its commitment to research and innovation.<br><br>`,
+
+    "p2.title":"LA TRINITÉ / BRANDING",
+    "p2.desc":`I took part in the call for proposals for Chapelle de la Trinité, a new concert hall dedicated to Baroque and contemporary music.Located in a Baroque architectural gem on the Lyon peninsula, the project is led by Superspective and Les Concerts de L’Hostel Dieu.The identity is built around a custom typeface, Tchotchki, capturing the venue’s unique spirit.`,
+
+    "p3.title":"LA BELLE ÉLECTRIQUE: 10 YEARS TOGETHER / IDENTITY",
+    "p3.desc":`La Belle Électrique is a vibrant venue and cultural center. For its 10th anniversary, we designed a campaign built around a graphic “10”, a symbol of shared richness, memories and experiences among the audience, the team and collaborators. The campaign rolled out citywide and onsite across print and digital.`,
+
+    "p4.title":"LA NUIT JE BRÛLE / EDITORIAL",
+    "p4.desc":`Collaboration with Benjamin Amis. A poetic-prose collection following a young narrator through solitude, excess, friendship, sex… Each text is laid out uniquely to mirror shifts in atmosphere and state of mind. Time replaces pagination: each page displays the hour, guiding the reader through the narrative.`,
+
+    "p5.title":"LA BELLE ÉLECTRIQUE: 10 YEARS TOGETHER / EDITORIAL",
+    "p5.desc":`A special edition celebrating La Belle Électrique’s 10th anniversary. Interviews, visual archives and a view on the venue’s cultural and social impact in Grenoble. Conceived as both memory and celebration.`,
+
+    "p6.title":"ENSAG-UGA / ANNUAL REPORT",
+    "p6.desc":`Collaboration with the Grenoble National School of Architecture to design the 2024–2025 activity report, highlighting research and pedagogical projects and the breadth of partnerships.`,
+
+    "p7.title":"LES NUITS DE LA BELLE ÉLECTRIQUE / IDENTITY",
+    "p7.desc":`Identity and visual system for “Les Nuits de la Belle Électrique”. Print and digital adaptations consistent with the venue’s universe.`,
+
+    "p8.title":"SIGNÉLAZER / CONSULTING",
+    "p8.desc":`Collaboration with the graphic design studio Signélazer. Projects for various French cultural clients.`,
+
+    "p9.title":"OILINWATER / CONSULTING",
+    "p9.desc":`Collaboration with the graphic design studio Oilinwater. Projects for cultural and corporate clients in Brussels.`,
+
+    "p10.title":"LA POMPADOUR / GRADUATION PROJECT",
+    "p10.desc":`La Pompadour is a publishing house asking: what makes a queer text? Exploring theatricality: the dust jacket becomes costume and set (faux leather, glitter, wallpapers…). Inside, type and illustration serve each text’s staging.`,
+
+    "p11.title":"CAMP / DISSERTATION",
+    "p11.desc":`“Camp” (from French “se camper”, to strike a pose): exaggeration, artifice and theatricality. This study examines intra-community dynamics and how such mechanisms can be reproduced in marketing.`,
+
+    "p12.title":"LA BELLE ÉLECTRIQUE / TECHNO NIGHTS",
+    "p12.desc":`Art direction and roll-out for La Belle Électrique’s techno programming. Visual identity adapted for print and digital.`,
+  
+    "about.p1": `Aubin Delhaye is a multidisciplinary graphic designer based between Brussels and Grenoble. His work bridges visual identity, typography, and printed & digital media, with expertise spanning branding, strategy and production — from concept development to preparing files for print and online distribution. He holds a DSAA (postgraduate applied arts diploma), grounding his practice in strong editorial and material considerations.`,
+"about.p2": `He has collaborated with studios such as Signélazer and Oilinwater, shaping visual identities for institutions and brands. In Brussels, within these studios, he supported cultural, associative, corporate and institutional teams — from strategic framing to ready-to-print/web deliverables. In parallel, he led communication for La Belle Électrique in Grenoble and is now developing his independent practice in France and Belgium.<br></br> © Copyright 2025 Aubin Delhaye. All Rights Reserved.`
+
+  
+  }
+};
+    
+    const DEFAULT_LANG = "fr";
+    const getLang = () =>
+      new URLSearchParams(location.search).get("lang") ||
+      localStorage.getItem("lang") || DEFAULT_LANG;
+    
+    function applyI18n(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        const txt = I18N[lang] && I18N[lang][key];
+        if (txt != null) {
+          if ("placeholder" in el) el.placeholder = txt;
+          else el.innerHTML = txt; // permet les <br>
+        }
+      });
+      localStorage.setItem("lang", lang);
+    }
+    
+    function setLang(lang, {pushUrl=true} = {}) {
+      applyI18n(lang);
+      if (pushUrl) {
+        const u = new URL(location.href);
+        u.searchParams.set("lang", lang);
+        history.replaceState({}, "", u);
+      }
+    }
+    
+    document.addEventListener("DOMContentLoaded", () => {
+      setLang(getLang(), {pushUrl:false});
+      document.querySelectorAll('a[href^="?lang="]').forEach(a => {
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          const lang = (new URL(a.href, location.href)).searchParams.get("lang");
+          setLang(lang);
+        });
+      });
+    });
+    </script>
+    
+           
+    <script src="page-transitions.js" defer></script>
+  </body>
 </html>
